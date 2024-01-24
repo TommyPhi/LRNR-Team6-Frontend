@@ -10,7 +10,7 @@ export default function Header() {
         color: "white"
       }}>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             LRNR
           </a>
           <button
@@ -27,12 +27,12 @@ export default function Header() {
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="/account">
                   Account
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/quiz">
                   Quiz Generation
                 </a>
               </li>
