@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
+
+/* ----------------------- */
+
+/* ------------------ MEDIA QUERY BREAK POINTS ----------------------*/
+
+/* PHONE USAGE */
+/* @media screen and (max-width: 400px) {
+
+} */
+
+/* TABLET USAGE  */
+
+/* @media screen and (min-width: 401px) and (max-width: 768px) {
+  } */
+
+  /* DESKTOP USAGE  */
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  header {
+      display: inline-block;
+  } */
+
+  /* -------------- END OF MEDIA QUERY --------------- */
