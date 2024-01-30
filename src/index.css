@@ -12,26 +12,4 @@ code {
     monospace;
 } */
 
-/* ----------------------- */
-
-/* ------------------ MEDIA QUERY BREAK POINTS ----------------------*/
-
-/* PHONE USAGE */
-/* @media screen and (max-width: 400px) {
-
-} */
-
-/* TABLET USAGE  */
-
-/* @media screen and (min-width: 401px) and (max-width: 768px) {
-  } */
-
-  /* DESKTOP USAGE  */
-
-/* @media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  header {
-      display: inline-block;
-  } */
-
-  /* -------------- END OF MEDIA QUERY --------------- */
+  
