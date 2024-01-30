@@ -9,7 +9,7 @@ export default function Home() {
           <div
             style={{
               display: "flex",
-              height: "200px",
+              height: "250px",
               alignItems: "center",
               justifyContent: "center",
             }}
@@ -23,10 +23,27 @@ export default function Home() {
               }}
             />
           </div>
-          <h4 class="mb-3">Your guided path to programming enlightenment</h4>
-          <a data-mdb-ripple-init class="btn btn-primary" href="" role="button">
+          <h4
+            class="mb-3"
+            style={{
+              margin: "15px",
+            }}
+          >
+            Your guided path to programming enlightenment
+          </h4>
+          <a
+            data-mdb-ripple-init
+            class="btn btn-primary btn-lg"
+            href="/quiz"
+            role="button"
+          >
             Begin journey
           </a>
+        </div>
+      </div>
+      <div className="container">
+        <div class="card">
+          <div class="card-body">This is some text within a card body.</div>
         </div>
       </div>
       <div className="container">
@@ -109,6 +126,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <br>
+      </br>
+      <br>
+      </br>
     </div>
   );
 }
