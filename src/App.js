@@ -5,6 +5,7 @@ import './App.css';
 import Home from './Home';
 import Account from './Account';
 import Quiz from './Quiz';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </>
       </Router>
+      <Footer />
     </div>
   );
 }

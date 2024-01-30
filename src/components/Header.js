@@ -1,5 +1,4 @@
 import React from "react";
-import {Router, Route, Routes, Link} from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -7,7 +6,8 @@ export default function Header() {
       <nav class="navbar navbar-expand-lg navbar-dark" style ={{
         padding: "5px 150px",
         background: "#2196f3",
-        color: "white"
+        color: "white",
+        boxShadow: "0 0 10px rgba(0,0,0,0.5)",
       }}>
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
@@ -27,7 +27,7 @@ export default function Header() {
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/account">
+                <a class="nav-link" aria-current="page" href="/account">
                   Account
                 </a>
               </li>
