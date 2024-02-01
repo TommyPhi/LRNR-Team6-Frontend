@@ -6,7 +6,7 @@ import "../App.css";
 
 export default function QuizForm() {
   const topic = useRef(null);
-  const expertise = useRef(null);
+  const expertiseValue = useRef(null);
   const numquestions = useRef(null);
   const questionstyle = useRef(null);
   const quizGenerateForm = useRef(null);
@@ -15,11 +15,12 @@ export default function QuizForm() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [currentStyle, setCurrentStyle] = useState("none");
   const [questionStyle, setQuestionStyle] = useState("normal");
+  const [expertise, setExpertise] = useState("novice");
 
   async function handleGenerateQuiz() {
     const quizOptions = {
       topic: topic.current.value,
-      expertise: expertise.current.value,
+      expertise: expertiseValue.current.value,
       numquestions: numquestions.current.value,
       questionstyle: questionstyle.current.value,
     };
@@ -43,6 +44,7 @@ export default function QuizForm() {
       .then((result) => {
         setQuestions(result);
         setQuestionStyle(quizOptions.questionstyle);
+        setExpertise(quizOptions.expertise);
         setCurrentStyle("block");
       })
       .catch((error) => console.log("error", error));
@@ -91,7 +93,7 @@ export default function QuizForm() {
             <label htmlFor="expertise" className="form-label">
               Expertise
             </label>
-            <select ref={expertise} className="form-select" id="expertise">
+            <select ref={expertiseValue} className="form-select" id="expertise">
               <option value="" disabled selected></option>
               <option value="novice">novice</option>
               <option value="intermediate">intermediate</option>
@@ -169,6 +171,7 @@ export default function QuizForm() {
             eStyle={currentStyle}
             questionStyle={questionStyle}
             questionNum={currentQuestion + 1}
+            expertise = {expertise}
           />
         )}
       </div>
