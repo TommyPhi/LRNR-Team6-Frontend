@@ -72,6 +72,7 @@ export default function Header() {
       <button
         className="navbar-toggler"
         type="button"
+        data-bs-toggle="dropdown"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
