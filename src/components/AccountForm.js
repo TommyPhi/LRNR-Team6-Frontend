@@ -17,7 +17,7 @@ export default function AccountForm() {
                 to create something more unique.
               </p>
               <p>
-                <a className="btn btn-primary btn-large" href="#">
+                <a className="btn btn-primary btn-large" href="/">
                   Edit profile..
                 </a>
               </p>
@@ -37,7 +37,7 @@ export default function AccountForm() {
                   {/* Profile Thumbnail Content */}
                 </div>
                 <span className="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
-                <a href="#" className="btn btn-gray-300 btn-xs">
+                <a href="/" className="btn btn-gray-300 btn-xs">
                   <span className="me-2">
                     <span className="fas fa-sign-out-alt"></span>
                   </span>
