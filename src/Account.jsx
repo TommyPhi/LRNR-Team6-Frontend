@@ -1,9 +1,11 @@
 import React from 'react'
+import AccountForm from './components/AccountForm';
 
 export default function Account() {
   return (
     <div>
-      <h1>Account page</h1>
+      <AccountForm />
+
     </div>
   )
 }
