@@ -1,0 +1,30 @@
+/* quiz form  */
+body .form-select {
+    border: 1.5px solid #1e7d70;
+    position: relative;
+    padding: 2vh 1.5vw;
+    cursor: pointer;
+  }
+  
+  .form-select:focus + .dropdown-menu {
+    transition: all 0.3s ease-in-out;
+    background-color: #ad3333;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+  }
+  
+  body .btn-custom {
+    background-color: #9931e9;
+    border-color: #9931e9;
+  }
+  
+  /* On hover, darken the background color */
+  body .btn-custom:hover {
+    background-color: #7f2992;
+    border-color: #7f2992;
+  }
+
+  /* NEED TO IMPORRT QUIZ CSS TO QUIZ PAGE
+  AND REMOVE CSS FRROM APP.JS */
+  

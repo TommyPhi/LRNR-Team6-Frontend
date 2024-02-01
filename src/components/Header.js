@@ -3,7 +3,6 @@
 // import 'bootstrap/dist/css/bootstrap.css';
 // import '../App.css';
 
-
 // export default function Header() {
 //   return (
 //      <div>
@@ -50,10 +49,72 @@
 //   );
 // }
 
+
+// SECOND ATTTEMPT 
+
+// import React, { useState, useEffect } from 'react';
+// import { Link, useLocation } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import '../css/Header.css';
+
+// export default function Header() {
+//   const location = useLocation();
+//   const [activeTab, setActiveTab] = useState('');
+
+//   useEffect(() => {
+//     const path = location.pathname.split('/').pop();
+//     setActiveTab(path || 'home');
+//   }, [location]);
+
+//   return (
+//     <nav className="navbar navbar-expand-lg navbar-mainbg">
+//       <a className="navbar-brand navbar-logo" href="/">
+//         LRNR
+//       </a>
+//       <div className="collapse navbar-collapse" id="navbarSupportedContent">
+//         <ul className="navbar-nav ml-auto">
+//           <div className="hori-selector"></div>
+//           <li className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}>
+//             <Link className="nav-link" to="/">
+//               <i className="fas fa-tachometer-alt"></i>Home
+//             </Link>
+//           </li>
+//           <li className={`nav-item ${activeTab === 'account' ? 'active' : ''}`}>
+//             <Link className="nav-link" to="/account">
+//               <i className="account-tab"></i>Account
+//             </Link>
+//           </li>
+//           <li className={`nav-item ${activeTab === 'quiz' ? 'active' : ''}`}>
+//             <Link className="nav-link" to="/quiz">
+//               <i className="quiz-tab"></i>Quiz
+//             </Link>
+//           </li>
+//           <li className={`nav-item ${activeTab === 'calendar' ? 'active' : ''}`}>
+//             <Link className="nav-link" to="/results">
+//               <i className="results-tab"></i>Results
+//             </Link>
+//           </li>
+//           <li className={`nav-item ${activeTab === 'charts' ? 'active' : ''}`}>
+//             <Link className="nav-link" to="/charts">
+//               <i className="charts-tab"></i>Charts
+//             </Link>
+//           </li>
+//         </ul>
+//       </div>
+//     </nav>
+//   );
+// }
+
+
+
+// THIRD ATTEMPT
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../App.css';
+import '../css/Header.css';
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 export default function Header() {
   const location = useLocation();
@@ -65,23 +126,24 @@ export default function Header() {
   }, [location]);
 
   return (
-    <nav className="navbar navbar-expand-custom navbar-mainbg">
+
+   <nav className="navbar navbar-expand-lg navbar-mainbg">
       <a className="navbar-brand navbar-logo" href="/">
         LRNR
       </a>
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="dropdown"
-        aria-controls="navbarSupportedContent"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i className="fas fa-bars text-white"></i>
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <div className="hori-selector"></div>
           <li className={`nav-item ${activeTab === 'home' ? 'active' : ''}`}>
             <Link className="nav-link" to="/">
               <i className="fas fa-tachometer-alt"></i>Home
@@ -97,14 +159,9 @@ export default function Header() {
               <i className="quiz-tab"></i>Quiz
             </Link>
           </li>
-          <li className={`nav-item ${activeTab === 'calendar' ? 'active' : ''}`}>
+          <li className={`nav-item ${activeTab === 'results' ? 'active' : ''}`}>
             <Link className="nav-link" to="/results">
               <i className="results-tab"></i>Results
-            </Link>
-          </li>
-          <li className={`nav-item ${activeTab === 'charts' ? 'active' : ''}`}>
-            <Link className="nav-link" to="/charts">
-              <i className="charts-tab"></i>Charts
             </Link>
           </li>
         </ul>
@@ -112,4 +169,3 @@ export default function Header() {
     </nav>
   );
 }
-
