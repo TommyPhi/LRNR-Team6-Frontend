@@ -1,12 +1,53 @@
-import React from "react";
-// import '../index.css'; 
+import React, {useRef, useState} from "react";
+// import '../index.css';
+import Question from './Question';
 import '../App.css';
 
-
 export default function QuizForm() {
+  const topic = useRef(null);
+  const expertise = useRef(null);
+  const numquestions = useRef(null);
+  const questionstyle = useRef(null);
+  const quizGenerateForm = useRef(null);
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [currentStyle, setCurrentStyle] = useState('none');
+  const [questionStyle, setQuestionStyle] = useState('normal');
+
+  async function handleGenerateQuiz() {
+    const quizOptions = {
+      topic: topic.current.value,
+      expertise: expertise.current.value,
+      numquestions: numquestions.current.value,
+      questionstyle: questionstyle.current.value
+    }
+    
+    const url = 'http://localhost:4000/api/generateQuiz?' + 'topic=' + quizOptions.topic + '&expertise=' + quizOptions.expertise + '&questionNum=' + quizOptions.numquestions + '&questionStyle=' + quizOptions.questionstyle
+    await fetch(url, {
+      method: 'GET'
+    })
+    .then(response => response.json())
+    .then(result => { 
+      setQuestions(result)
+      setQuestionStyle(quizOptions.questionstyle)
+      quizGenerateForm.current.style.display = 'none'
+      setCurrentStyle('block')
+    })
+    .catch(error => console.log('error', error))
+}
+
+function handleNextQuestion() {
+  if(currentQuestion === questions.length - 1) {
+    window.location.href = '/results'
+    return
+  }
+  setCurrentQuestion(currentQuestion + 1)
+  console.log(currentQuestion)
+}
+
   return (
     <div className="container">
-      <div className="section">
+      <div ref={quizGenerateForm} className="section">
         <div className="row">
           <div className="col">
             <h3 className="mb-4">Quiz Generation Options</h3>
@@ -22,7 +63,7 @@ export default function QuizForm() {
             <label htmlFor="topic" className="form-label">
               Topic
             </label>
-            <select className="form-select" id="topic">
+            <select ref={topic} className="form-select" id="topic">
               <option value="" disabled selected></option>
               <option value="golang">golang</option>
               <option value="aws">aws</option>
@@ -37,7 +78,7 @@ export default function QuizForm() {
             <label htmlFor="expertise" className="form-label">
               Expertise
             </label>
-            <select className="form-select" id="expertise">
+            <select ref={expertise} className="form-select" id="expertise">
               <option value="" disabled selected></option>
               <option value="novice">novice</option>
               <option value="intermediate">intermediate</option>
@@ -48,7 +89,7 @@ export default function QuizForm() {
             <label htmlFor="numquestions" className="form-label">
               Number of questions
             </label>
-            <select className="form-select" id="numquestions">
+            <select ref={numquestions} className="form-select" id="numquestions">
               <option value="" disabled></option>
               <option value="5" selected>5</option>
               <option value="10">10</option>
@@ -59,7 +100,7 @@ export default function QuizForm() {
             <label htmlFor="questionstyle" className="form-label">
               Style of questions
             </label>
-            <select className="form-select" id="questionstyle">
+            <select ref={questionstyle} className="form-select" id="questionstyle">
               <option value="" disabled></option>
               <option value="master oogway">master oogway</option>
               <option value="1940's gangster">1940's gangster</option>
@@ -74,13 +115,14 @@ export default function QuizForm() {
           <button
             id="btn-categories"
             className="btn btn-primary btn-custom"
-            onClick={() => console.log("Button clicked")}
+            onClick={() => handleGenerateQuiz()}
             >
             Submit
             </button>
           </div>
         </div>
       </div>
+      <Question key={currentQuestion} question={questions[currentQuestion]} handleNextQuestion = {handleNextQuestion} eStyle = {currentStyle} questionStyle = {questionStyle} />
     </div>
   );
 }

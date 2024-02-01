@@ -6,7 +6,7 @@ import './App.css';
 import Home from './Home';
 import Account from './Account';
 import Quiz from './Quiz';
-import Results from './Results';
+import Footer from './components/Footer';
 
 function App() {
   return (
