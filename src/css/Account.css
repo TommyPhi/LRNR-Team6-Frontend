@@ -1,0 +1,127 @@
+/* MAIN DIV TOP HEADER HELLO USER */
+.jumbotron {
+    top: 11vh;
+    margin-top: 2vh;
+    padding: 8rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 0.3rem;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .jumbotron h2 {
+    font-weight: 900;
+    color: #6f42c1;
+    font-size: 40px;
+  }
+  
+  .jumbotron p {
+    color: #55595d;
+  }
+  
+  .content-container {
+    background-color: #cec7de;
+    /* padding: 20px; */
+    height: 90vh;
+    margin-top: 17vh;
+    padding-bottom: 8vh;
+  }
+  
+  .container-fluid.jumbotron-container {
+    background-color: rgba(98, 69, 151, 0.1); /* Set your desired background color */
+  }
+  
+  /* inside container */
+  /* Styles for user profile panel */
+  
+  .content-container .card {
+    top: 10vh;
+    width: 90%;
+    margin: 0 auto;
+    height: 81vh;
+  }
+  
+  .card-header {
+    background-color: #5161ce;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  /* Add styling to the card-body inside the .card */
+  .miniprofile.card {
+    background-color: #7da6f6;
+    height: 60vh;
+    width: 70%;
+    border-color: #e5e7eb !important;
+  }
+  
+  .miniprofile.card .card-header .h5 {
+    color: #1e3589;
+    font-size: 25px;
+  }
+  
+  .miniprofile.card .card-header .profile-thumbnail {
+    max-width: 100%;
+    width: 25%;
+    height: 10vh;
+    border-radius: 50%;
+    border: 2px solid #c8c8c8;
+    background-image: url('../assets/images/profile_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .d-lg-block {
+    margin-top: 6%;
+  }
+  
+  .p-2 {
+    margin-top: 2vh;
+  }
+  
+  /* profile button */
+  
+  .btn-gray-300 {
+    color: #1c2540;
+    font-weight: 800;
+    background-color: #e5e7eb;
+    border-color: #e5e7eb;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(23, 31, 56, .075);
+  }
+  
+  .btn-gray-300:hover {
+    color: #e5e7eb;
+    background-color: #1c2540;
+    border-color: #1c2540;
+  }
+  
+  /* stats card */
+
+  .new-column-heading {
+    font-size: 24px; 
+    font-weight: 900;
+    color: #6f42c1;
+  }
+  
+  .new-card.card {
+    background-color: #ff8800; 
+    color: #584646; 
+  }
+
+  
+
+  /* BOOSTRAP ICONS */
+  .bi {
+    color: #1de9b6 !important;
+  }
+  
