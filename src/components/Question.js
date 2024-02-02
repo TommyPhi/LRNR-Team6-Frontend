@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { ProgressBar } from "react-loader-spinner";
+import { BarLoader } from "react-spinners";
 import vernerImg from "../assets/images/transparent-turtle.png";
 
 export default function Question(props) {
@@ -8,8 +8,16 @@ export default function Question(props) {
   const answerBox = useRef(null);
   const submitBtn = useRef(null);
   const answerContainer = useRef(null);
+  const alert = useRef(null);
 
   async function handleSubmitAnswer() {
+    if (!userAnswer.current.value) {
+      alert.current.style.display = "block";
+      // setTimeout(() => {alert.current.style.display = "none";}, 5000);
+      return;
+    } else {
+      alert.current.style.display = "none";
+    }
     answerContainer.current.style.display = "none";
     submitBtn.current.disabled = true;
     answerContainer.current.style.display = "block";
@@ -27,17 +35,15 @@ export default function Question(props) {
       .then((response) => response.json())
       .then((result) => {
         setAnswer(result);
-        // if (answerBox){
-        //   answerBox.current.current.querySelector("button").style.display = "block";
-        // }
-        // answerBox.current.querySelector("button").style.display = "block";
-        // nextBtn.current.style.display = "block";
         submitBtn.current.disabled = false;
       });
   }
 
   return (
     <div style={{ display: props.eStyle }}>
+      <div ref={alert} class="alert alert-danger" role="alert" style={{display: 'none'}}>
+        &#9888; Oops! Looks like you forgot to answer the question.
+      </div>
       <div class="container pt-5">
         <h1 class="display-3">Question {props.questionNum}</h1>
         <p class="lead">{props.question}</p>
@@ -49,6 +55,7 @@ export default function Question(props) {
             aria-describedby="userAnswer"
             placeholder="Enter your answer here"
             ref={userAnswer}
+            autoComplete="off"
           />
         </div>
         <button
@@ -63,18 +70,9 @@ export default function Question(props) {
       <div ref={answerContainer} style={{ display: "none" }}>
         {!answer || Object.keys(answer).length === 0 ? (
           <div>
-            <ProgressBar
-              visible={true}
-              height="80"
-              width="80"
-              barColor="#5161ce"
-              borderColor="#2d45e2"
-              ariaLabel="progress-bar-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-            />
+            <BarLoader color="#5161ce" width='100%' class='mt-5'/>
           </div>
-        ) : (
+        ) : ( 
           <div ref={answerBox} className="container pt-5">
             <div className="row align-items-center justify-content-center">
               <div className="col-12 col-md-10 col-lg-5 mb-5 mb-lg-0">
@@ -90,10 +88,10 @@ export default function Question(props) {
               </div>
               <button
                 className="btn btn-primary"
+                style={{width: '50%'}}
                 onClick={() => {
                   props.handleNextQuestion();
                 }}
-                // style={{ display: "none" }}
               >
                 Next
               </button>

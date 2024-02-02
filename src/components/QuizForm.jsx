@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // import '../index.css';
 import Question from "./Question";
-import { Oval } from 'react-loader-spinner'
+import { HashLoader } from "react-spinners";
 import "../App.css";
 
 export default function QuizForm() {
@@ -153,16 +153,15 @@ export default function QuizForm() {
       </div>
       <div ref={questionContainer} style={{ display: "none" }}>
         {!questions.length ? (
-          <Oval
-            visible={true}
-            height="80"
-            width="80"
+        <div class="d-flex justify-content-center flex-grow-*">
+          <HashLoader
             color="#5161ce"
-            secondaryColor="#2d45e2"
-            ariaLabel="oval-loading"
-            wrapperStyle={{}}
-            wrapperClass=""
+            cssOverride={{}}
+            loading
+            size={100}
+            speedMultiplier={1}
           />
+        </div>
         ) : (
           <Question
             key={currentQuestion}
@@ -171,7 +170,7 @@ export default function QuizForm() {
             eStyle={currentStyle}
             questionStyle={questionStyle}
             questionNum={currentQuestion + 1}
-            expertise = {expertise}
+            expertise={expertise}
           />
         )}
       </div>
