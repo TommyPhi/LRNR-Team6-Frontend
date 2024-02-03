@@ -17,7 +17,7 @@ export default function AccountForm() {
                 to create something more unique.
               </p>
               <p>
-                <a className="btn btn-primary btn-large" href="/">
+                <a className="btn btn-primary btn-large" href="#">
                   Edit profile..
                 </a>
               </p>
@@ -31,18 +31,18 @@ export default function AccountForm() {
         <div className="row gx-4 mt-4">
           <div className="col-md-6 mb-3 mb-lg-0 d-flex flex-column">
             {/* First Column - Existing Content */}
-            <div className="miniprofile card border-gray-300 p-2 h-100">
-              <div className="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+            <div className="miniprofile card border-gray-300 p-2 h-100 d-flex flex-column">
+              <div className="card-header border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
                 <div className="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
                   {/* Profile Thumbnail Content */}
                 </div>
                 <span className="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
-                <a href="/" className="btn btn-gray-300 btn-xs">
-                  <span className="me-2">
-                    <span className="fas fa-sign-out-alt"></span>
-                  </span>
-                  Sign Out
-                </a>
+                <a href="/" className="btn btn-sign-out btn-xs">
+                        <span className="me-2">
+                            <span className="fas fa-sign-out-alt"></span>
+                        </span>
+                        Sign Out
+                    </a>
               </div>
               <div className="card-body p-2">
                 <div className="list-group dashboard-menu list-group-sm">
@@ -58,8 +58,8 @@ export default function AccountForm() {
 
           <div className="col-md-6 mb-3 mb-lg-0 d-flex flex-column">
             {/* Second Column - New Content */}
-            <div className="new-card card border-gray-300 p-2 h-100">
-              <div className="card-header bg-white border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
+            <div className="new-card card border-gray-300 p-2 h-100 d-flex flex-column">
+              <div className="card-header border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
                 <h2 className="new-column-heading"> Stats</h2>
               </div>
               <div className="card-body p-2">

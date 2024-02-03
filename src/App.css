@@ -25,12 +25,15 @@ body .btn-custom:hover {
   border-color: #7f2992;
 }
 
+
+/* ---------HOME MAIN PAGE CONTENT ------------ */
 /* -------HOME HERO IMAGE-------  */
 .hero-v1 {
   padding: 8rem 0 8rem 0;
   border-bottom-right-radius: 50%;
   background: rgba(98, 69, 151, 0.1);
   overflow: hidden; 
+  margin-bottom: 10vh;
 }
 
 .hero-v1 .heading {
@@ -48,28 +51,34 @@ body .btn-custom:hover {
 }
 
 .hero-v1 .illustration img {
-  /* position: relative; */
   margin-top: 0vh;
   margin-left: 12%;
-  /* position: absolute;  */
-  /* position: fixed; */
-  /* width: 13vw;
-  height: 23vh; */
-  padding: 40px; /* Adjust the padding as needed */
-  background: linear-gradient(to bottom right, #84c2d0, #4B0082); /* Adjust the color stops as needed */
+  padding: 40px; 
+  background: linear-gradient(to bottom right, #84c2d0, #4B0082); 
   border-radius: 76% 24% 79% 21% / 17% 70% 30% 83%;
 }
 
-/* .hero-v1 .illustration-2 {
-  position: relative;
-  margin-top: -200px;
-  position: absolute; 
-} */
-
 /* SECOND HERO IMAGE / WHAT IS LRNR? */
  /* 2ND HERO IMAGE SECTION */
+
 .site-section {
-  padding: 90px 0; }
+  padding: 90px 0; 
+}
+
+.custom-heading2 {
+  font-weight: 900;
+  color: #6f42c1;
+  font-size: 40px;
+}
+
+.img-fluid {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    padding: 40px;
+    background: rgba(89, 41, 179, 0.174);
+    border-radius: 90% 10% 89% 11% / 13% 83% 17% 87% 
+}
+
 
 /* -------BUTTON ON MAIN HOME PAGE------- */
       
@@ -86,12 +95,6 @@ body .btn-custom:hover {
   color: #fff; 
 }
 
-/* .btn.btn-primary:hover {
-  background: #6f42c1;
-  border-color: #6f42c1;
-  color: #fff; 
-} */
-
 .btn.btn-primary:hover {
   background-color: rgb(255, 102, 102);
   border-color: #6f42c1;
@@ -101,56 +104,38 @@ body .btn-custom:hover {
 
 /* -------CARDS INFO-------  */
 
+.custom-heading3 {
+  font-size: 30px;
+    text-transform: uppercase;
+    color: rgba(111, 66, 193, 0.5);
+    letter-spacing: .1rem;
+    font-weight: 900;
+}
+
 /* background color of card div */
 .bg-custom-color {
   background-color: rgba(111, 66, 193, 0.05);
   width: 100%;
 }
 
+/* card size  */
 .single-feature {
   text-align: center;
   margin-bottom: 3vh;
-  padding: 55px 30px 35px;
+  padding: 95px 30px 35px;
+  margin: 0 auto; 
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
-  /* background: #1a7eeadc; */
   background: linear-gradient(to top left, #84c2d0, #3406b1);
   border-radius: 10px;
-}
-.single-feature .icon{
- width: 125px;
-  height: 125px;
-  line-height: 180px;
-  margin-bottom: 37px;
-  position: relative;
-    display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
+  width: 87%; 
 }
 
-.single-feature .icon::before {
-  position: absolute;
-  content: "";
-  top: 3%;
-  left: 3%;
-  width: 94%;
-  height: 94%;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  z-index: 1;
+.row > * {
+  margin-bottom: 20px; /* Adjust the space between each card */
 }
-.single-feature .icon::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 10px solid #1c2748;
-  border-radius: 50%;
-}
+
 .single-feature .content .title {
   font-size: 24px;
   line-height: 34px;
@@ -159,81 +144,13 @@ body .btn-custom:hover {
   color: #FFF;
   margin-bottom: 15px;
 }
-.single-feature .content .link {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #a1aed4;
-  margin-bottom: 0px;
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+
+.single-feature .content .card-text {
+  color: #d6d6d8; /* Adjust the color for the card text */
 }
 
 .single-feature:hover {
   -webkit-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
   transform: translateY(-10px);
-}
-/*one box*/
-.single-feature .icon.one i{
-font-size:50px;
-color:#f9314b;
-}
-.single-feature .icon.one {
-  border: 7px solid #f9314b;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 110px;
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(249, 49, 75, 0.2), 0px 0px 0px 15px rgba(249, 49, 75, 0.2);
-   box-shadow: 0px 0px 0px 15px rgba(249, 49, 75, 0.2), 0px 0px 0px 15px rgba(249, 49, 75, 0.2); 
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
- 
-}
-.single-feature:hover .icon.one {
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(249, 49, 75, 0.2), 0px 0px 0px 30px rgba(249, 49, 75, 0.2);
-  box-shadow: 0px 0px 0px 15px rgba(249, 49, 75, 0.2), 0px 0px 0px 30px rgba(249, 49, 75, 0.2);
-}
-/*two box*/
-.single-feature .icon.two {
-  border: 7px solid #f67a1f;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 110px;
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(246, 122, 31, 0.2), 0px 0px 0px 15px rgba(246, 122, 31, 0.2);
-  box-shadow: 0px 0px 0px 15px rgba(246, 122, 31, 0.2), 0px 0px 0px 15px rgba(246, 122, 31, 0.2);
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-.single-feature .icon.two i{
-font-size:50px;
-color:#f67a1f;
-}
-.single-feature:hover .icon.two {
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(246, 122, 31, 0.2), 0px 0px 0px 30px rgba(246, 122, 31, 0.2);
-  box-shadow: 0px 0px 0px 15px rgba(246, 122, 31, 0.2), 0px 0px 0px 30px rgba(246, 122, 31, 0.2);
-}
-/*three box*/
-.single-feature .icon.three {
-  border: 7px solid #bc2cdd;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 110px;
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(188, 44, 221, 0.2), 0px 0px 0px 15px rgba(188, 44, 221, 0.2);
-  box-shadow: 0px 0px 0px 15px rgba(188, 44, 221, 0.2), 0px 0px 0px 15px rgba(188, 44, 221, 0.2);
-  -webkit-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-.single-feature .icon.three i{
-font-size:50px;
-color:#bc2cdd;
-}
-.single-feature:hover .icon.three {
-  -webkit-box-shadow: 0px 0px 0px 15px rgba(188, 44, 221, 0.2), 0px 0px 0px 30px rgba(188, 44, 221, 0.2);
-  box-shadow: 0px 0px 0px 15px rgba(188, 44, 221, 0.2), 0px 0px 0px 30px rgba(188, 44, 221, 0.2);
 }

@@ -1,9 +1,7 @@
 import React from "react";
 import './App.css';
 import turtlelogo from "./assets/images/transparent-turtle.png";
-import lrnrlogo from "./assets/images/logoframe3.png";
-// import lrnrlogo from "./assets/images/lrnrlogo.png";
-// import lrnrwallpaper from "./assets/images/lrnr-turtle2.jpg";
+import clearlogo from "./assets/images/clear-logo.png";
 
 export default function Home() {
   return (
@@ -20,9 +18,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <figure className="illustration">
-              <img src={turtlelogo} alt="hero 1" class="img-fluid"/>
-                {/* <img src={turtlelogo} alt="for page" className="img-fluid"
-                 style={{ width: "20%", height: "35%" }}/> */}
+                <img src={turtlelogo} alt="hero img 2" className="img-fluid turtle-logo-img" />
               </figure>
             </div>
           </div>
@@ -35,11 +31,11 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6 mb-4 mb-lg-0">
               <figure className="illustrationtwo">
-                <img src={lrnrlogo} alt="hero 2" className="img-fluid" />
+                <img src={clearlogo} alt="hero 2" className="img-fluid" />
               </figure>
             </div>
             <div className="col-lg-5 ml-auto">
-              <h2 className="mb-4 section-heading">What is LRNR?</h2>
+              <h2 className="mb-4 section-heading custom-heading2">What is LRNR?</h2>
               <p>LRNR is not just an app; it's your guide to personalized enlightenment in the world 
                 of coding. Aspiring developers, from novices to masters, can embark on a tailored journey 
                 through the art of coding. Our app crafts custom quizzes that align with your unique coding 
@@ -48,86 +44,54 @@ export default function Home() {
                  of a thousand lines of code begins with a single keystroke. Join us on this coding odyssey and explore the 
                  boundless possibilities of LRNR.
               </p>
-              <ul className="list-check list-unstyled mb-5">
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
-                <li>Unde doloremque</li>
-              </ul>
+              <br></br>
               <p><a href="/" className="btn btn-primary">Learn more</a></p>
             </div>
           </div>
         </div>
       </div>
-      
 
-      {/* CARDS SECTION  */}
+      {/* CARDS SECTION */}
       <div className="container-fluid pt-5 pb-5 bg-custom-color">
-      <h1 className="text-center pt-4 pb-4 h4">Bootstrap 4 card component MORE INFORMATION</h1>
-  <div className="row">
-									<div className="col-lg-4 col-md-6">
-										<div className="single-feature">
-											<div className="icon one">
-												<i classname="far fa-sun"></i>
-											</div>
-                      
-											<div className="content">
-												<h4 className="title">
-                        Personalized Quizzes
-												</h4>
-
-                        <p className="card-text">
-                        Greetings, young padawan. Are you ready to embark on a journey of personalized 
-                        enlightenment through the art of coding? Our app, can create custom quizzes that
-                         align with your coding skills and interests. Whether you are a novice or a master, 
-                         our system can generate questions that will test your proficiency in programming 
-                         languages, tools, and concepts
-                         </p>
-                        <br></br>
-                        <a href="/" className="btn btn-primary">Read more</a>
-											</div>
-										</div>
-									</div>
-									<div className="col-lg-4 col-md-6">
-										<div class="single-feature">
-											<div className="icon two">
-												<i className="fas fa-fire-extinguisher"></i>
-											</div>
-											<div className="content">
-												<h4 className="title">
-                        Rewarding
-                        </h4>
-                        <p className="card-text">
-                        Our app is designed to be both challenging and rewarding, so you can learn new concepts while enjoying the process. With our personalized quiz app, you can track your progress, compete with your peers, and discover new areas of expertise. The journey of a thousand lines of code begins with a single keystroke
-                        <br></br>
-                        <br></br>
-                        </p>
-                        <a href="/" className="btn btn-primary">Read more</a>
-											</div>
-										</div>
-									</div>
-									<div className="col-lg-4 col-md-6">
-										<div className="single-feature">
-											<div className="icon three">
-												<i className="fas fa-headset"></i>
-											</div>
-											<div className="content">
-												<h4 className="title">
-                        Personal SME
-												</h4>
-
-                        <p className="card-text">
-                        Welcome to the path of knowledge. Our app is like having a personal subject matter expert at your side, guiding you on your journey towards wisdom
-                  </p>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <a href="/" className="btn btn-primary">Read more</a>
-											</div>
-										</div>
-									</div>
-								</div>
+        <h1 className="text-center pt-4 pb-4 h4 custom-heading3">Information</h1>
+        <div className="row">
+          <div className="col-lg-4 col-md-6 d-flex">
+            <div className="single-feature flex-column d-flex h-100">
+              <div className="icon one"></div>
+              <div className="content">
+                <h4 className="title">Personalized Quizzes</h4>
+                <p className="card-text">
+                  Greetings, young padawan. Are you ready to embark on a journey of personalized enlightenment through the art of coding? Our app can create custom quizzes that align with your coding skills and interests. Whether you are a novice or a master, our system can generate questions that will test your proficiency in programming languages, tools, and concepts.
+                </p>
+              </div>
             </div>
           </div>
+
+          <div className="col-lg-4 col-md-6 d-flex">
+            <div className="single-feature flex-column d-flex h-100">
+              <div className="icon two"></div>
+              <div className="content">
+                <h4 className="title">Rewarding</h4>
+                <p className="card-text">
+                  Our app is designed to be both challenging and rewarding, so you can learn new concepts while enjoying the process. With our personalized quiz app, you can track your progress, compete with your peers, and discover new areas of expertise. The journey of a thousand lines of code begins with a single keystroke.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-6 d-flex">
+            <div className="single-feature flex-column d-flex h-100">
+              <div className="icon three"></div>
+              <div className="content">
+                <h4 className="title">Personal SME</h4>
+                <p className="card-text">
+                  Welcome to the path of knowledge. Our app is like having a personal subject matter expert at your side, guiding you on your journey towards wisdom.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
