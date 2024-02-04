@@ -78,13 +78,13 @@ export default function QuizForm() {
             </label>
             <select ref={topic} className="form-select" id="topic">
               <option value="" disabled selected></option>
-              <option value="golang">golang</option>
-              <option value="aws">aws</option>
-              <option value="javascript">javascript</option>
+              <option value="golang">Golang</option>
+              <option value="aws">AWS</option>
+              <option value="javascript">JavaScript</option>
               <option value="ci/cd">CI/CD</option>
-              <option value="growing you own garden">home gardens</option>
-              <option value="coffee">coffee</option>
-              <option value="finger food">finger foods</option>
+              <option value="growing you own garden">Home Gardens</option>
+              <option value="coffee">Coffee</option>
+              <option value="finger food">Finger Foods</option>
             </select>
           </div>
           <div className="col-12 mb-3">
@@ -93,9 +93,9 @@ export default function QuizForm() {
             </label>
             <select ref={expertise} className="form-select" id="expertise">
               <option value="" disabled selected></option>
-              <option value="novice">novice</option>
-              <option value="intermediate">intermediate</option>
-              <option value="expert">expert</option>
+              <option value="novice">Novice</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="expert">Expert</option>
             </select>
           </div>
           <div className="col-12 mb-3">
@@ -125,17 +125,17 @@ export default function QuizForm() {
               id="questionstyle"
             >
               <option value="" disabled></option>
-              <option value="master oogway">master oogway</option>
-              <option value="1940's gangster">1940's gangster</option>
+              <option value="master oogway">Master Oogway</option>
+              <option value="1940's gangster">1940's Gangster</option>
               <option value="like i'm an 8 year old">
-                like I'm an 8 year old
+                 8 year old
               </option>
               <option value="normal" selected>
-                normal
+                Normal
               </option>
-              <option value="master yoda">jedi</option>
-              <option value="captain jack sparrow">captain jack sparrow</option>
-              <option value="matthew mcconaughey">matthew mcconaughey</option>
+              <option value="master yoda">Jedi</option>
+              <option value="captain jack sparrow">Captain Jack Sparrow</option>
+              <option value="matthew mcconaughey">Matthew McConaughey</option>
             </select>
           </div>
           <div className="col-12">
