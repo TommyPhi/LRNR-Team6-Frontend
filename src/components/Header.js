@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Navbar, Nav } from 'react-bootstrap';
 import '../css/Header.css';
+import turner from '../assets/images/transparent-turtle.png'; 
 
 export default function Header() {
   const location = useLocation();
@@ -15,6 +16,12 @@ export default function Header() {
 
   return (
     <Navbar expand="lg" className="navbar-mainbg">
+    <a href="/">
+      <img src={turner} style={{
+        width: '50px',
+        height: '50px'
+      }}></img>
+    </a>
       <Navbar.Brand href="/" className="navbar-brand-custom">LRNR</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarNav" />
       <Navbar.Collapse id="navbarNav" className="justify-content-end">

@@ -8,7 +8,7 @@ body .form-select {
 
 .form-select:focus + .dropdown-menu {
   transition: all 0.3s ease-in-out;
-  background-color: #ad3333;
+  background-color: #80b1ca;
   opacity: 1;
   z-index: 1;
   transform: translateY(0);
@@ -93,12 +93,15 @@ body .btn-custom:hover {
   background: #6f42c1;
   border-color: #6f42c1;
   color: #fff; 
+  transition: all 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover {
-  background-color: rgb(255, 102, 102);
-  border-color: #6f42c1;
+  background-color: #432875;
+  border-color: #432875;
   color: #fff; 
+  transform: scale(1.03);
+  transition: all 0.3s ease-in-out;
 }
 
 
