@@ -20,17 +20,14 @@ export default function Footer() {
     <div className="col-lg-3 col-xs-12 links">
       <h4 className="mt-lg-0 mt-sm-3">Links</h4>
         <ul className="m-0 p-0">
-          <li><a href="/">Lorem ipsum</a></li>
-          <li><a href="/">Nam mauris velit</a></li>
-          <li><a href="/">Etiam vitae mauris</a></li>
-          <li><a href="/">Fusce scelerisque</a></li>
-          <li><a href="/">Sed faucibus</a></li>
-          <li><a href="/">Mauris efficitur nulla</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quiz">Quiz Generator</a></li>
+          <li><a href="/account">Account</a></li>
         </ul>
     </div>
     <div className="col-lg-4 col-xs-12 location">
       <h4 className="mt-lg-0 mt-sm-4">Location</h4>
-      <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+      <p>1101 Red Ventures Dr, Fort Mill, SC 29707</p>
       <p className="mb-0"><i className="fa fa-phone mr-3"></i>(541) 754-3010</p>
       <p><i className="fa fa-envelope-o mr-3"></i>info@lrnr.com</p>
     </div>

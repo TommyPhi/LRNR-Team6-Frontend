@@ -14,10 +14,12 @@
   padding: 15px;
   color: #fff;
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
   }
 
   .navbar-brand-custom:hover {
-  color: #de8510;
+  color: #354087;
+  transition: all 0.3s ease-in-out;
   }
 
 .navbar-mainbg {
@@ -45,8 +47,12 @@
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.nav-link:focus {
+	color: #354087;
+}
+
 .nav-link:hover {
-	color: rgb(228, 102, 12); 
+	color: #354087;
 }
 
 .navbar-toggler {
