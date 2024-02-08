@@ -155,10 +155,10 @@ export default function QuizForm() {
         <div class="d-flex justify-content-center flex-grow-*">
           <HashLoader
             color="#5161ce"
-            cssOverride={{}}
+            cssOverride={{ padding: "150px"}}
             loading
-            size={100}
-            speedMultiplier={1}
+            size={150}
+            speedMultiplier={1.2}
           />
         </div>
         ) : (
