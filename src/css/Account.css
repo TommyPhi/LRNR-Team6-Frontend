@@ -61,18 +61,6 @@
   font-size: 25px;
 }
 
-.miniprofile.card .card-header .profile-thumbnail {
-  max-width: 100%;
-  width: 40%; /* Set the width to 100% to allow responsiveness */
-  height: 15vh; /* Allow the height to adjust proportionally */
-  border-radius: 50%;
-  border: 2px solid #c8c8c8;
-  background-image: url('../assets/images/profile_img.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .d-lg-block {
   margin-top: 6%;
 }

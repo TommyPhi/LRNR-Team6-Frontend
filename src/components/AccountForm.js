@@ -33,10 +33,7 @@ export default function AccountForm() {
             {/* First Column - Existing Content */}
             <div className="miniprofile card border-gray-300 p-2 h-100 d-flex flex-column">
               <div className="card-header border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
-                <div className="profile-thumbnail dashboard-avatar mx-lg-auto me-3">
-                  {/* Profile Thumbnail Content */}
-                </div>
-                <span className="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, Bonnie!</span>
+                <span className="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, User!</span>
                 <a href="/" className="btn btn-sign-out btn-xs">
                         <span className="me-2">
                             <span className="fas fa-sign-out-alt"></span>
