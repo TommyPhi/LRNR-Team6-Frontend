@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-// import '../index.css';
 import Question from "./Question";
 import { HashLoader } from "react-spinners";
 import "../App.css";

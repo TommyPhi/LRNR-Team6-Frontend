@@ -1,0 +1,29 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh; /* adjust to add overall container size height */
+  }
+
+  .result {
+    top: 14vh;
+    margin-top: 2vh;
+    padding: 8rem;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 0.8rem;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  
+  .result h1 {
+    color: #2d3032;
+    text-align: center;
+        
+}
+  
+  .result-container {
+    background-color: rgba(98, 69, 151, 0.1); /* Set your desired background color */
+  }
+  
