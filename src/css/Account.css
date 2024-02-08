@@ -65,7 +65,7 @@
   margin-top: 6%;
 }
 
-/* Styles for new-card */
+/* Styles for new-card user info */
 
 .new-column-heading {
   font-size: 24px;
@@ -82,6 +82,15 @@
 .btn-sign-out:hover {
   color: #fff; 
   background-color: #577fdc; 
+}
+
+/* user profile "Stats" card */
+
+.new-card {
+  background-color: #f6f6f6;
+  border: 1px solid #ced4da; 
+  border-radius: 0.5rem; 
+  margin-left: -7vw !important;
 }
 
 /* BOOSTRAP ICONS */
