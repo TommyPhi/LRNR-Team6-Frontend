@@ -9,16 +9,16 @@ export default function AccountForm() {
         <div className="row">
           <div className="col-md-12">
             <div className="jumbotron card card-block">
-              <h2>Hello, User!</h2>
-              <p>
+              <h2 className="display-4">Hello, User!</h2>
+              <p className="lead">
                 This is a template for a simple marketing or informational
                 website. It includes a large callout called the hero unit and
                 three supporting pieces of content. Use it as a starting point
                 to create something more unique.
               </p>
               <p>
-                <a className="btn btn-primary btn-large" href="#">
-                  Edit profile..
+                <a className="btn btn-primary btn-lg" href="#">
+                  Edit profile
                 </a>
               </p>
             </div>
@@ -28,70 +28,68 @@ export default function AccountForm() {
 
       {/* Container for Content in the Row */}
       <div className="container-fluid content-container">
-        <div className="row gx-4 mt-4">
-          <div className="col-md-6 mb-3 mb-lg-0 d-flex flex-column">
-            {/* First Column - Existing Content */}
-            <div className="miniprofile card border-gray-300 p-2 h-100 d-flex flex-column">
-              <div className="card-header border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
-                <span className="h5 my-0 my-lg-3 me-3 me-lg-0">Hi, User!</span>
-                <a href="/" className="btn btn-sign-out btn-xs">
-                        <span className="me-2">
-                            <span className="fas fa-sign-out-alt"></span>
-                        </span>
-                        Sign Out
-                    </a>
+        <div className="row gx-md-4 gx-2 mt-md-4">
+          <div className="col-md-6 mb-md-0 mb-3">
+            
+            {/* First Column */}
+            <div className="miniprofile card border-gray-300 h-100">
+              <div className="card-header bg-light text-center">
+                <span className="h4 my-3">Hi, User!</span>
+                <a href="/" className="btn btn-sign-out">
+                  <span className="me-2">
+                    <span className="bi bi-box-arrow-right"></span>
+                  </span>
+                  Sign Out
+                </a>
               </div>
-              <div className="card-body p-2">
-                <div className="list-group dashboard-menu list-group-sm">
-                  <a href="/" className="d-flex list-group-item border-0 list-group-item-action">Overview <span className="icon icon-xs ms-auto"><span className="fas fa-chevron-right"></span></span> </a>
-                  <a href="/" className="d-flex list-group-item border-0 list-group-item-action">Settings<span className="icon icon-xs ms-auto"><span className="fas fa-chevron-right"></span></span> </a>
-                  <a href="/" className="d-flex list-group-item border-0 list-group-item-action">Messages<span className="icon icon-xs ms-auto"><span className="fas fa-chevron-right"></span></span> </a>
-                  <a href="/" className="d-flex list-group-item border-0 list-group-item-action">My Items<span className="icon icon-xs ms-auto"><span className="fas fa-chevron-right"></span></span> </a>
-                  <a href="/" className="d-flex list-group-item border-0 list-group-item-action border-0">Achievements<span className="icon icon-xs ms-auto"><span className="fas fa-chevron-right"></span></span></a>
+              <div className="card-body">
+                <div className="list-group dashboard-menu">
+                  <a href="/" className="list-group-item">Overview</a>
+                  <a href="/" className="list-group-item">Settings</a>
+                  <a href="/" className="list-group-item">Messages</a>
+                  <a href="/" className="list-group-item">My Items</a>
+                  <a href="/" className="list-group-item">Achievements</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-md-6 mb-3 mb-lg-0 d-flex flex-column">
+          <div className="col-md-6 mb-md-0 mb-3">
             {/* Second Column - New Content */}
-            <div className="new-card card border-gray-300 p-2 h-100 d-flex flex-column">
-              <div className="card-header border-0 text-center d-flex flex-row flex-lg-column align-items-center justify-content-center px-1 px-lg-4">
-                <h2 className="new-column-heading"> Stats</h2>
+            <div className="new-card card border-gray-300 h-100">
+              <div className="card-header bg-light text-center">
+                <h2 className="new-column-heading">Stats</h2>
               </div>
-              <div className="card-body p-2">
-                {/* Add your content for the new column here */}
+              <div className="card-body">
                 <div className="container">
-                  <div className="section">
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="icon-block text-center">
-                          <h2 className="center teal-text text-accent-3"><i className="bi bi-fire"></i></h2>
-                          <p className="header-5">Streak</p>
-                          <p className="light">You have a streak of 5 days!</p>
-                        </div>
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="icon-block text-center">
+                        <h2 className="teal-text text-accent-3"><i className="bi bi-fire"></i></h2>
+                        <p className="header-5">Streak</p>
+                        <p className="light">You have a streak of 5 days!</p>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="icon-block text-center">
-                          <h2 className="teal-text text-accent-3"><i className="bi bi-card-list"></i></h2>
-                          <p className="header-5">Platinum Quizzes</p>
-                          <ul>
-                            <li className="light">golang - intermediate</li>
-                            <li className="light">Javascript - beginner </li>
-                            <li className="light">AWS - beginner</li>
-                          </ul>
-                        </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="icon-block text-center">
+                        <h2 className="teal-text text-accent-3"><i className="bi bi-card-list"></i></h2>
+                        <p className="header-5">Platinum Quizzes</p>
+                        <ul className="list-unstyled">
+                          <li className="light">golang - intermediate</li>
+                          <li className="light">Javascript - beginner</li>
+                          <li className="light">AWS - beginner</li>
+                        </ul>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="icon-block text-center">
-                          <h2 className="teal-text text-accent-3"><i className="bi bi-person-fill"></i></h2>
-                          <p className="header-5">lrnr Level: 2</p>
-                          <p className="light center">150/200 xp</p>
-                        </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="icon-block text-center">
+                        <h2 className="teal-text text-accent-3"><i className="bi bi-person-fill"></i></h2>
+                        <p className="header-5">lrnr Level: 2</p>
+                        <p className="light">150/200 xp</p>
                       </div>
                     </div>
                   </div>
