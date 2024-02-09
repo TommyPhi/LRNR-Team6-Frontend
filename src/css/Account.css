@@ -1,20 +1,18 @@
 /* MAIN DIV TOP HEADER HELLO USER */
+
 .jumbotron {
   top: 11vh;
-  margin-top: 2vh;
-  padding: 8rem;
-  margin-bottom: 2rem;
+  padding: 4rem; 
   background-color: rgba(255, 255, 255, 0.959);
   border-radius: 0.3rem;
   width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
+  margin: 0 auto; 
 }
 
 .jumbotron h2 {
-  font-weight: 900;
+  font-weight: 700; 
   color: #6f42c1;
-  font-size: 40px;
+  font-size: 2.5rem; 
 }
 
 .jumbotron p {
@@ -23,12 +21,14 @@
 
 .content-container {
   background-color: #cec7de;
-  margin-top: 17vh;
-  padding-bottom: 17vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh; 
 }
 
 .container-fluid.jumbotron-container {
-  background-color: rgba(98, 69, 151, 0.1); /* Set your desired background color */
+  background-color: rgba(98, 69, 151, 0.1);
+  height: 70vh;
+  margin-bottom: 5vh;
 }
 
 /* Styles for user profile panel */
@@ -38,37 +38,27 @@
 }
 
 .content-container .card {
-  top: 10vh;
-  width: 98%;
+  width: 95%; 
   margin: 0 auto;
-}
-
-/* MENU in personal profile */
-.p-2 {
-  padding: 0 !important;
 }
 
 /* Styles for miniprofile card */
 .miniprofile.card {
   background-color: #ffffff;
-  max-width: 100%; /* responsiveness */
-  width: 55%; /* Adjusted to allow for responsiveness */
-  height: auto; 
+  max-width: 100%;
+  width: 100%; 
+  height: auto;
 }
 
-.miniprofile.card .card-header .h5 {
+.miniprofile.card .card-header .h2 {
   color: rgba(85, 66, 193, 0.557);
-  font-size: 25px;
-}
-
-.d-lg-block {
-  margin-top: 6%;
+  font-size: 1.5rem; 
 }
 
 /* Styles for new-card user info */
 
 .new-column-heading {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: rgba(85, 66, 193, 0.557);
 }
@@ -76,26 +66,23 @@
 /* Sign Out Button */
 .btn-sign-out {
   color: #ffffff;
-  background-color: #5368bc83; 
+  background-color: #5368bc83;
 }
 
 .btn-sign-out:hover {
-  color: #fff; 
-  background-color: #577fdc; 
+  color: #fff;
+  background-color: #577fdc;
 }
 
 /* user profile "Stats" card */
 
 .new-card {
   background-color: #f6f6f6;
-  border: 1px solid #ced4da; 
-  border-radius: 0.5rem; 
-  margin-left: -7vw !important;
+  border: 1px solid #ced4da;
+  border-radius: 0.5rem;
 }
 
 /* BOOSTRAP ICONS */
 .bi {
   color: #1de9b6 !important;
 }
-
-
