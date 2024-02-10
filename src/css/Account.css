@@ -1,18 +1,18 @@
 /* MAIN DIV TOP HEADER HELLO USER */
 
 .jumbotron {
-  top: 11vh;
-  padding: 4rem; 
+  padding: 7rem;
   background-color: rgba(255, 255, 255, 0.959);
   border-radius: 0.3rem;
-  width: 80%;
-  margin: 0 auto; 
+  width: 100%;
+  margin: 12vh auto; /* Add margin to the top and bottom */
+  overflow: hidden;
 }
 
 .jumbotron h2 {
-  font-weight: 700; 
+  font-weight: 700;
   color: #6f42c1;
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
 }
 
 .jumbotron p {
@@ -22,23 +22,21 @@
 .content-container {
   background-color: #cec7de;
   padding-top: 10vh;
-  padding-bottom: 10vh; 
+  padding-bottom: 10vh;
 }
 
 .container-fluid.jumbotron-container {
   background-color: rgba(98, 69, 151, 0.1);
-  height: 70vh;
   margin-bottom: 5vh;
 }
 
 /* Styles for user profile panel */
-
 .card-header {
   background-color: #f1f1f1c4;
 }
 
 .content-container .card {
-  width: 95%; 
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -46,17 +44,21 @@
 .miniprofile.card {
   background-color: #ffffff;
   max-width: 100%;
-  width: 100%; 
-  height: auto;
+  width: 100%;
 }
 
 .miniprofile.card .card-header .h2 {
   color: rgba(85, 66, 193, 0.557);
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
+}
+
+.miniprofile .card-header .h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(85, 66, 193, 0.557);
 }
 
 /* Styles for new-card user info */
-
 .new-column-heading {
   font-size: 1.5rem;
   font-weight: 600;
@@ -65,6 +67,7 @@
 
 /* Sign Out Button */
 .btn-sign-out {
+  margin-left: 1vw;
   color: #ffffff;
   background-color: #5368bc83;
 }
@@ -75,7 +78,6 @@
 }
 
 /* user profile "Stats" card */
-
 .new-card {
   background-color: #f6f6f6;
   border: 1px solid #ced4da;
@@ -86,3 +88,7 @@
 .bi {
   color: #1de9b6 !important;
 }
+
+
+
+

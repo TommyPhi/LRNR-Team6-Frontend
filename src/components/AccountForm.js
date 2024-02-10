@@ -8,19 +8,21 @@ export default function AccountForm() {
       <div className="container-fluid jumbotron-container">
         <div className="row">
           <div className="col-md-12">
-            <div className="jumbotron card card-block">
-              <h2 className="display-4">Hello, User!</h2>
-              <p className="lead">
-                This is a template for a simple marketing or informational
-                website. It includes a large callout called the hero unit and
-                three supporting pieces of content. Use it as a starting point
-                to create something more unique.
-              </p>
-              <p>
-                <a className="btn btn-primary btn-lg" href="#">
-                  Edit profile
-                </a>
-              </p>
+            <div className="row">
+              <div className="col-md-8 offset-md-2">
+                <div className="jumbotron">
+                  <h2 className="display-4">Hello, User! </h2>
+                  <p className="lead">
+                    Below, you may be able to edit your account settings
+                    to include a profile picture, a biography, and other information.
+                  </p>
+                  <p>
+                    <a className="btn btn-primary btn-lg" href="#">
+                      Edit profile
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -35,10 +37,12 @@ export default function AccountForm() {
             <div className="miniprofile card border-gray-300 h-100">
               <div className="card-header bg-light text-center">
                 <span className="h4 my-3">Hi, User!</span>
+                
                 <a href="/" className="btn btn-sign-out">
                   <span className="me-2">
                     <span className="bi bi-box-arrow-right"></span>
                   </span>
+
                   Sign Out
                 </a>
               </div>
