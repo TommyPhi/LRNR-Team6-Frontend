@@ -3,6 +3,8 @@
 
 LRNR is an innovative user-friendly learning platform interface that allows users to interact with OpenAI's GPT-3 language model through a simple and user-friendly interface utilizing a quiz form.
 
+The Quiz Generator page allows users to generate personalized quizzes according to the users preferences and knowledge level. The user can choose from various topics and expertise levels, specify the number of questions, and select a question style to suit the users learning goals and interests. 
+
 
 ## Quiz Generator Options
 
@@ -17,12 +19,10 @@ LRNR is an innovative user-friendly learning platform interface that allows user
 | Finger Foods           |                      | Matthew McConaughey       |                          |
 
 
-The Quiz Generator page allows users to generate personalized quizzes based on their preferences.
 
+Once the quiz is generated, you'll see the questions displayed one by one. Answer each question and click **Next** to proceed to the next question.
 
-Once the quiz is generated, you'll see the questions displayed one by one. Answer each question and click Next to proceed to the next question.
-
-After answering all the questions, you'll be redirected to the results page.
+After answering all the questions, you'll be redirected to the **Results** page.
 
 
 ## Authors
@@ -54,11 +54,11 @@ Clone the front end project with the following commands:
 ```
 
 
-Navigate to the project directory.
+Navigate to the project directory
 
 
 ```bash
- cd LRNR-Team6
+ cd /LRNR-Team6
 ```
 
 
