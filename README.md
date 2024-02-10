@@ -3,10 +3,12 @@
 
 LRNR is an innovative user-friendly learning platform interface that allows users to interact with OpenAI's GPT-3 language model through a simple and user-friendly interface utilizing a quiz form.
 
-The Quiz Generator page allows users to generate personalized quizzes according to the users preferences and knowledge level. The user can choose from various topics and expertise levels, specify the number of questions, and select a question style to suit the users learning goals and interests. 
-
 
 ## Quiz Generator Options
+
+
+The Quiz Generator page allows users to generate personalized quizzes according to the users preferences and knowledge level. The user can choose from various topics and expertise levels, specify the number of questions, and select a question style to suit the users learning goals and interests. 
+
 
 | **Topic**              | **Expertise Level** | **Question Style**        | **Number of Questions** |
 | ---------------------- | -------------------- | --------------------------| ------------------------ |
