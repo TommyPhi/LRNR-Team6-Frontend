@@ -6,7 +6,7 @@ export default function ScoreResults() {
     <div className="main-content">
       <div className="container-fluid result-container">
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 d-flex justify-content-center"> 
             <div className="result card card-block">
               <div className="row">
                 <div className="col-md-12">
