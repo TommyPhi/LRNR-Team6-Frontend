@@ -3,6 +3,20 @@
 
 LRNR is an innovative user-friendly learning platform interface that allows users to interact with OpenAI's GPT-3 language model through a simple and user-friendly interface utilizing a quiz form.
 
+## Authors
+
+- [@TommyPhi](https://github.com/TommyPhi)
+- [@Lara-Crofts](https://github.com/Lara-Crofts)
+- [@clerickbarrion](https://github.com/clerickbarrion)
+- [@hassan-niang](https://github.com/hassan-niang)
+
+
+## Technologies Used
+
+- **React.js:** Frontend framework for building user interfaces.
+- **Bootstrap:** CSS framework for responsive design.
+- **HashLoader:** Loading spinner component from React-Spinners library.
+
 
 ## Quiz Generator Options
 
@@ -27,21 +41,6 @@ Once the quiz is generated, you'll see the questions displayed one by one. Answe
 After answering all the questions, you'll be redirected to the **Results** page.
 
 
-## Authors
-
-- [@TommyPhi](https://github.com/TommyPhi)
-- [@Lara-Crofts](https://github.com/Lara-Crofts)
-- [@clerickbarrion](https://github.com/clerickbarrion)
-- [@hassan-niang](https://github.com/hassan-niang)
-
-
-## Technologies Used
-
-- **React.js:** Frontend framework for building user interfaces.
-- **Bootstrap:** CSS framework for responsive design.
-- **HashLoader:** Loading spinner component from React-Spinners library.
-
-
 # Run Locally
 
 
@@ -51,8 +50,6 @@ Clone the front end project with the following commands:
 
 ```bash
  git clone https://github.com/TommyPhi/LRNR-Team6-Frontend
-
-
 ```
 
 
