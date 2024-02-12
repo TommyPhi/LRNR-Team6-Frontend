@@ -7,6 +7,7 @@ import Account from './components/Account';
 import Quiz from './components/Quiz';
 import Footer from './components/Footer';
 import Results from './components/Results';
+import Error from './components/Error';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/results" element={<Results />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </div>
