@@ -73,5 +73,5 @@ Start the server
 
 
 ```bash
- Node app.js 
+ npm start 
 ```
